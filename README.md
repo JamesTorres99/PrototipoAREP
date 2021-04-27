@@ -2,6 +2,11 @@
 ## Descripción
 En las **Estrategias de medición de la adopción de la nube en empresas colombianas** se presentarán y analizarán factores de adopción y aceptación de la Computación en la Nube en empresas colombianas. La metodología utilizada fue elaborada de manera descriptiva con su respectiva investigación de fondo, en la cual una fue de revisión de literatura, seguida por ejemplos de empresas que ya tienen adopción en la nube en gran parte de la infraestructura del área de TI de la empresa. Como resultado de esta investigación, surge una adopción a esta tecnología, en la que se establecieron tres tipos de variables como lo son variables estratégicas, de competitividad y desempeño, teniendo en cuenta la utilidad y facilidad de uso percibida por los individuos frente a la Computación en la Nube, y, por lo tanto, la intención de uso. Debido a que la relación con la Computación en la Nube está ligada al entorno y a las experiencias de las empresas colombianas, esta adopción contribuye en parte de manera transversal a la innovación basada en conocimiento y al desarrollo tecnológico.
 
+## Desplegar en Heroku
+Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
+
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
@@ -20,7 +25,7 @@ java -version
 Para descargar el proyecto de GitHub, primero debemos clonar este repositorio, ejecutando la siguiente línea de comando en GIT.
 
 ```
-git clone https://github.com/Skullzo/AREP-Lab4.git
+git clone https://github.com/JamesTorres99/PrototipoAREP.git
 ```
 
 ## Ejecución
@@ -39,15 +44,6 @@ mvn test
 Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Sistema, debe aparecer la siguiente imagen, demostrando que las pruebas han sido realizadas exitosamente.
 
 ![img](https://github.com/Skullzo/AREP-Lab4/blob/main/img/Pruebas.PNG)
-
-## Desplegar en Heroku
-Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
-
-* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku.
-* Para visualizar un fondo de pantalla ofrecido por Fancy Wallpapers, poner el recurso ```/fondodepantalla.html``` al final de la URL de Heroku.
-* Para visualizar un agradecimiento por visitar la página web de Fancy Wallpapers, poner el recurso ```/agradecimiento.html``` al final de la URL de Heroku.
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
