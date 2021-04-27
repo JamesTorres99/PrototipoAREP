@@ -4,7 +4,7 @@ En las **Estrategias de medición de la adopción de la nube en empresas colombi
 
 ## Enlace a la aplicación en Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arep-proyecto.herokuapp.com/)
 
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
