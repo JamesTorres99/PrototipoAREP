@@ -67,4 +67,4 @@ Para desplegar el programa en Heroku, se debe realizar clic en el siguiente bot�
 ## Licencia & Derechos de Autor
 **©** Alejandro Toro Daza, Estudiantes de Ingeniería de Sistemas de la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/)
 
-Licencia bajo la [GNU General Public License](https://github.com/JamesTorres99/PrototipoAREP/blob/main/LICENSE).
+Licencia bajo la [GNU General Public License](https://github.com/JamesTorres99/PrototipoAREP/blob/main/LICENSE.txt).
