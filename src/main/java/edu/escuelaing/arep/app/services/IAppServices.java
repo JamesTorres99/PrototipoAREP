@@ -5,7 +5,10 @@
  */
 package edu.escuelaing.arep.app.services;
 
+import edu.escuelaing.arep.app.model.DatesIp;
 
-public interface IAppServices {
+
+public interface IAppServices { 
     
+    public DatesIp getIpdates(String ipadress);
 }

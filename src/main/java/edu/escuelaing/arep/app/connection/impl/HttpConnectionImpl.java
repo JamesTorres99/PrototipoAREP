@@ -15,7 +15,8 @@ import edu.escuelaing.arep.app.connection.HttpConnection;
 public class HttpConnectionImpl implements HttpConnection {
 
     @Override 
-    public String getIpdates(String ip) throws IOException{
+    public String getIpdates(String ip) throws IOException{ 
+        //System.out.println(ip);
         String USER_AGENT = "Mozilla/5.0";
         String GET_URL= "https://ipgeolocation.abstractapi.com/v1/?api_key=a1f6f7e5312b4ad4b202d8b0ce5bbaf7&ip_address="+ip;
         URL obj = new URL(GET_URL);
@@ -23,7 +24,7 @@ public class HttpConnectionImpl implements HttpConnection {
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
         int responseCode = con.getResponseCode();
-        System.out.println("GET Response Code :: " + responseCode);
+        //System.out.println("GET Response Code :: " + responseCode);
         if (responseCode == HttpURLConnection.HTTP_OK) {
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     con.getInputStream()));
@@ -33,9 +34,9 @@ public class HttpConnectionImpl implements HttpConnection {
                 response.append(inputLine);
             }
             in.close();
-            System.out.println(response.toString());
+            //System.out.println(response.toString());
             return response.toString();
-        } else {
+        } else { 
         	return null;
         }		
     }
