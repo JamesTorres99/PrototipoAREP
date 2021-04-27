@@ -62,7 +62,9 @@ Para desplegar el programa en Heroku, se debe realizar clic en el siguiente bot�
 
 ## Autor
 [Alejandro Toro Daza](https://github.com/Skullzo)
+
 [Duck James Alexander Torres Segura](https://github.com/JamesTorres99)
+
 [David Leonardo Coronado Gomez](https://github.com/davinchicoronado)
 ## Licencia & Derechos de Autor
 **©** Alejandro Toro Daza, Estudiantes de Ingeniería de Sistemas de la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/)
