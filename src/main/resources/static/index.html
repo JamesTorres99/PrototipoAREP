@@ -38,7 +38,7 @@
     <form action="/action_page.php">
         <label for="fcity">Dirección IP:</label>
         <input type="text" id="fcity" name="fcity" placeholder="Ingrese aquí la Dirección IP.">
-        <button type="button" class="btn btn-primary" onclick="app.getWeatherByCity($('#fcity').val())" >Buscar</button>
+        <button type="button" class="btn btn-primary" onclick="app.getIpdates($('#fcity').val())" >Buscar</button>
     </form>
     <table class="table table-dark" id = "table">
         <thead>
@@ -57,6 +57,5 @@
 <div id="map-canvas"></div>
 </body>
 <script src="js/apiclient.js"></script>
-<script src="js/apimock.js"></script>
 <script src="js/app.js"></script>
 </html>
