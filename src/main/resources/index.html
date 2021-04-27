@@ -11,7 +11,7 @@
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <link rel="stylesheet"
           href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <title>Open Weather Map</title>
+    <title>Estrategias de medición de la adopción de la nube en empresas colombianas</title>
     <style>
         .padre {
         background-color: #fafafa;
@@ -36,18 +36,18 @@
 <div class = "padre">
     <h1>Estrategias de medición de la adopción de la nube en empresas colombianas</h1>
     <form action="/action_page.php">
-        <label for="fcity">Ciudad:</label>
-        <input type="text" id="fcity" name="fcity" placeholder="Ingrese aquí la ciudad.">
+        <label for="fcity">Dirección IP:</label>
+        <input type="text" id="fcity" name="fcity" placeholder="Ingrese aquí la Dirección IP.">
         <button type="button" class="btn btn-primary" onclick="app.getWeatherByCity($('#fcity').val())" >Buscar</button>
     </form>
     <table class="table table-dark" id = "table">
         <thead>
         <tr>
-            <th scope="col">Temperatura (Kelvin)</th>
-            <th scope="col">Temperatura mínima (Kelvin)</th>
-            <th scope="col">Temperatura máxima (Kelvin)</th>
-            <th scope="col">Humedad relativa (%)</th>
-            <th scope="col">Presión atmosférica (hPa)</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Región</th>
+            <th scope="col">País</th>
+            <th scope="col">Nombre de la organización</th>
+            <th scope="col">Proveedor</th>
         </tr>
         </thead>
         <tbody id = "body">
