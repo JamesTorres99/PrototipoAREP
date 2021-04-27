@@ -42,7 +42,7 @@ mvn test
 
 Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Sistema, debe aparecer la siguiente imagen, demostrando que las pruebas han sido realizadas exitosamente.
 
-![img](https://github.com/Skullzo/AREP-Lab4/blob/main/img/Pruebas.PNG)
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Pruebas.PNG)
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
