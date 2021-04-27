@@ -1,21 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-	<title>Estrategias de medición de la adopción de la nube en empresas colombianas</title>
+    <title>Estrategias de medición de la adopción de la nube en empresas colombianas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <link rel="stylesheet"
+          href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <title>Open Weather Map</title>
+    <style>
+        .padre {
+        background-color: #fafafa;
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px solid #ccc;
+        text-align: center;
+        }
+        #map-canvas {
+          width: 100%;
+          height: 100%;
+        }
+		body, html { height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color:silver;
+        }
+    </style>
 </head>
-<body>
-	<form action=\"/results\">
-    <div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:400%; position:absolute ; top:0px ; left:0px\">
-    Estrategias de medición de la adopción de la nube en empresas colombianas
-    </div>
-    <div style=\"padding:30px; width:96.9%; background:#005A80; color:white; font-size:150%; position:absolute ; top:120px ; left:0px\">
-    Ingrese la Dirección IP que desea consultar sus servicios Cloud.
-    </div>
-    <input type=\"text\" name='numbers' placeholder=\"Ingrese aquí la Dirección IP.\" style=\"width:500px ; font-size:150% ; position:absolute ; top:207px ; text-align:center; left:0px \">
-    <input type=\"submit\" value=\"Consultar\" style=\"width:253px ; font-size:150% ; position:absolute ; top:242px ; text-align:center; left:0px\">
-    <input type=\"reset\" value=\"Limpiar\" style=\"width:254px ; font-size:150% ; position:absolute ; top:242px ; text-align:center; left:254px\">
-    <body style = \"background:#005A80\">
-    </body>
+<body onload="app.initMap()">
+<div class = "padre">
+    <h1>Estrategias de medición de la adopción de la nube en empresas colombianas</h1>
+    <form action="/action_page.php">
+        <label for="fcity">Ciudad:</label>
+        <input type="text" id="fcity" name="fcity" placeholder="Ingrese aquí la ciudad.">
+        <button type="button" class="btn btn-primary" onclick="app.getWeatherByCity($('#fcity').val())" >Buscar</button>
     </form>
+    <table class="table table-dark" id = "table">
+        <thead>
+        <tr>
+            <th scope="col">Temperatura (Kelvin)</th>
+            <th scope="col">Temperatura mínima (Kelvin)</th>
+            <th scope="col">Temperatura máxima (Kelvin)</th>
+            <th scope="col">Humedad relativa (%)</th>
+            <th scope="col">Presión atmosférica (hPa)</th>
+        </tr>
+        </thead>
+        <tbody id = "body">
+        </tbody>
+    </table>
+</div>
+<div id="map-canvas"></div>
 </body>
+<script src="js/apiclient.js"></script>
+<script src="js/apimock.js"></script>
+<script src="js/app.js"></script>
 </html>
