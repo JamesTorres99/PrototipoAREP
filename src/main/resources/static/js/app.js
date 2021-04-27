@@ -20,32 +20,32 @@ var app = (function (){
     var map;
 	var _map = function (list){
     	return list.map(function(data){
-    			return {name:data.name, temp:data.main.temp, pressure: data.main.pressure}
+    			return {name:data.name, temp:data.main.city, pressure: data.main.isp_name}
     	})
     }
 	var setCity = function(city_name){
 		city = city_name;
 	};
-	function table(weather) {
-	    console.log(weather)
-	    console.log(weather.main.temp);
-	    console.log(weather.main.temp_min);
-	    console.log(weather.main.temp_max);
-	    console.log(weather.main.humidity);
-	    console.log(weather.main.pressure);
-	    console.log(weather.main.feels_like);
+	function table(ipadress) {
+	    console.log(ipadress)
+	    console.log(ipadress.main.city);
+	    console.log(ipadress.main.region);
+	    console.log(ipadress.main.country);
+	    console.log(ipadress.main.organization_name);
+	    console.log(ipadress.main.isp_name);
+	    console.log(ipadress.main.feels_like);
 	    $("#body").html("");
     		$('#body')
     			.append(
     			  `<tr>
-    				<td>`+weather.main.temp+`</td>
-    				<td>`+weather.main.temp_min+`</td>
-    				<td>`+weather.main.temp_max+`</td>
-    				<td>`+weather.main.humidity+`</td>
-    				<td>`+weather.main.pressure+`</td>
+    				<td>`+ipadress.main.city+`</td>
+    				<td>`+ipadress.main.region+`</td>
+    				<td>`+ipadress.main.country+`</td>
+    				<td>`+ipadress.main.organization_name+`</td>
+    				<td>`+ipadress.main.isp_name+`</td>
     			  </tr>`
     			);
-    	plotMarkers(weather);
+    	plotMarkers(ipadress);
     };
 	var getIpdates = function(city) {
         setCity(city);
