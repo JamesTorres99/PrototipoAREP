@@ -47,10 +47,10 @@ var app = (function (){
     			);
     	plotMarkers(weather);
     };
-	var getWeatherByCity = function(city) {
+	var getIpdates = function(city) {
         setCity(city);
         if (city != "") {
-            api.getWeatherByCity(city,table);
+            api.getIpdates(city,table);
         }
     };
 	var getFunctionsByWeather =  function (b,c) {
@@ -90,7 +90,7 @@ var app = (function (){
     }
 	return {
 	    getFunctionsByWeather : getFunctionsByWeather,
-		getWeatherByCity :  getWeatherByCity,
+		getIpdates :  getIpdates,
         initMap:initMap,
         plotMarkers:plotMarkers,
 	};

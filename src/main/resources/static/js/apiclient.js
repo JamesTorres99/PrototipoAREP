@@ -1,7 +1,7 @@
 apiclient= (function () {
             //var url = "http://localhost:8080/weather"
             var url = "https://arep-proyecto.herokuapp.com/ipadress"
-            var  getWeatherByCity = function(city,callback){
+            var  getIpdates = function(city,callback){
                 $.getJSON(url+"/"+city,(data)=>{
                     callback(data);
                 },null)
@@ -12,7 +12,7 @@ apiclient= (function () {
                },null)
             };
             return {
-                getWeatherByCity:getWeatherByCity,
+                getIpdates:getIpdates,
                 getFunctionsByWeather:getFunctionsByWeather,
             }
  })();
