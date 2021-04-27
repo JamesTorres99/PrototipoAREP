@@ -1,8 +1,8 @@
 apiclient= (function () {
-            //var url = "http://localhost:8080/weather"
-            var url = "https://arep-proyecto.herokuapp.com/ipadress"
+            var url = "http://localhost:8080/ipadress"
+            //var url = "https://arep-proyecto.herokuapp.com/ipadress"
             var  getIpdates = function(city,callback){
-                $.getJSON(url+"/"+city,(data)=>{
+                $.getJSON(url+"/"+city+".",(data)=>{
                     callback(data);
                 },null)
             };

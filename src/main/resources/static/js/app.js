@@ -27,25 +27,27 @@ var app = (function (){
 		city = city_name;
 	};
 	function table(ipadress) {
-	    console.log(ipadress)
-	    console.log(ipadress.main.city);
-	    console.log(ipadress.main.region);
-	    console.log(ipadress.main.country);
-	    console.log(ipadress.main.organization_name);
-	    console.log(ipadress.main.isp_name);
-	    console.log(ipadress.main.feels_like);
+	    console.log(ipadress);
+	    console.log(ipadress.city);
+	    console.log(ipadress.region);
+	    console.log(ipadress.country);
+	    console.log(ipadress.organitation_name);
+	    console.log(ipadress.isp_name);
+	    console.log(ipadress.feels_like);
 	    $("#body").html("");
     		$('#body')
     			.append(
     			  `<tr>
-    				<td>`+ipadress.main.city+`</td>
-    				<td>`+ipadress.main.region+`</td>
-    				<td>`+ipadress.main.country+`</td>
-    				<td>`+ipadress.main.organization_name+`</td>
-    				<td>`+ipadress.main.isp_name+`</td>
+    				<td>`+ipadress.city+`</td>
+    				<td>`+ipadress.region+`</td>
+    				<td>`+ipadress.country+`</td>
+    				<td>`+ipadress.organitation_name+`</td>
+    				<td>`+ipadress.isp_name+`</td>
     			  </tr>`
-    			);
-    	plotMarkers(ipadress);
+    			); 
+                
+    	plotMarkers(ipadress); 
+        
     };
 	var getIpdates = function(city) {
         setCity(city);
@@ -77,7 +79,7 @@ var app = (function (){
         markers = [];
         bounds = new google.maps.LatLngBounds();
         console.log(m);
-         var position = new google.maps.LatLng(m.coord.lat, m.coord.lon);
+         var position = new google.maps.LatLng(m.lat, m.lon);
          markers.push(
             new google.maps.Marker({
                      position: position,
