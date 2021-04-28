@@ -40,6 +40,22 @@ Para realizar las pruebas correspondientes del proyecto utilizando la herramient
 mvn test
 ```
 
+----------
+
+Al desplegar la aplicación en Heroku, se tiene la siguiente interfaz de usuario, en la cual este puede ingresar la dirección IP que se desea consultar y de la cual se desean saber los respectivos datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la IP ingresada.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Interfaz.PNG)
+
+Luego de escribir en el campo provisto la dirección IP alojada en Amazon (52.15.247.208), para probar el correcto funcionamiento de la aplicación, se muestran los datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la misma.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/AWS.PNG)
+
+Para probar que el caché está funcionando correctamente, se ingresa otra dirección IP alojada en Microsoft (40.121.255.254). Luego de ingresar la dirección IP y presionar clic sobre el botón **Buscar**, se muestran los datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la dirección IP. También se muestra la ubicación de la dirección IP de Amazon en el mapa, la cual fue la última dirección IP consultada antes de realizar la respectiva búsqueda de la dirección IP alojada en Microsoft.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MicrosoftAzure.PNG)
+
+Para realizar la última prueba con una dirección IP cuyo propietario es el Ministerio de Salud y Protección Social (186.31.104.171), se ingresa la dirección IP y presionar clic sobre el botón **Buscar**, se muestran los datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la dirección IP. También se muestra la ubicación de la dirección IP de Amazon y Microsoft en el mapa, las cuales fue las últimas direcciónes IP consultadas antes de realizar la respectiva búsqueda de la dirección IP propietaria del Ministerio de Salud y Protección Social.
+
 Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Sistema, debe aparecer la siguiente imagen, demostrando que las pruebas han sido realizadas exitosamente.
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Pruebas.PNG)
