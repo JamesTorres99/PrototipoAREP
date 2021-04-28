@@ -60,6 +60,8 @@ Para probar que el caché está funcionando correctamente, se ingresa otra direc
 
 Para realizar la última prueba con una dirección IP cuyo propietario es el Ministerio de Salud y Protección Social (186.31.104.171), se ingresa la dirección IP y presionar clic sobre el botón **Buscar**, se muestran los datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la dirección IP. También se muestra la ubicación de la dirección IP de Amazon y Microsoft en el mapa, las cuales fue las últimas direcciónes IP consultadas antes de realizar la respectiva búsqueda de la dirección IP propietaria del Ministerio de Salud y Protección Social.
 
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MinisterioDeSalud.PNG)
+
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
 * [GIT](https://git-scm.com/). Sistema de control de versiones que almacena cambios sobre un archivo o un conjunto de archivos, permite recuperar versiones previas de esos archivos y permite otras cosas como el manejo de ramas (branches).
