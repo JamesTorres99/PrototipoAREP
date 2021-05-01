@@ -25,7 +25,10 @@ public class ImplAppServices implements IAppServices{
     public DatesIp getIpdates(String ipadress){
         
         try {
-            String infoIp = con.getIpdates(ipadress); 
+             
+            String infoIp = con.getIpdates(ipadress);
+            
+            infoIp = infoIp.replace("null", "\"not found\"");
             
             JSONObject jsonIp = new JSONObject(infoIp);
             
@@ -51,7 +54,8 @@ public class ImplAppServices implements IAppServices{
             return ip;
             
             
-        } catch (IOException ex) {
+        } catch (IOException ex) { 
+
             Logger.getLogger(ImplAppServices.class.getName()).log(Level.SEVERE, null, ex);
         }
         
