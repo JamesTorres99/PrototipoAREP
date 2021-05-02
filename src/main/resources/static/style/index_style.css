@@ -85,7 +85,7 @@ p.texto{
 	-webkit-transition: padding-top .4s;
 }
 
-div.contenedor:hover{
+div.contenedor:hover{ 
 	height:250px;
 }
 
