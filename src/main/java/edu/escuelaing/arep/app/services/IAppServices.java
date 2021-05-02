@@ -6,9 +6,13 @@
 package edu.escuelaing.arep.app.services;
 
 import edu.escuelaing.arep.app.model.DatesIp;
+import edu.escuelaing.arep.app.model.Organization;
+import java.util.List;
 
 
 public interface IAppServices { 
     
-    public DatesIp getIpdates(String ipadress);
+    public DatesIp getIpdates(String ipadress); 
+    
+    public List<Organization> getOrganization(String types);
 }

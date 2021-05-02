@@ -7,8 +7,11 @@ package edu.escuelaing.arep.app.services.impl;
 
 import edu.escuelaing.arep.app.connection.HttpConnection;
 import edu.escuelaing.arep.app.model.DatesIp;
+import edu.escuelaing.arep.app.model.Organization;
+import edu.escuelaing.arep.app.persistence.AppPersistence;
 import edu.escuelaing.arep.app.services.IAppServices;
 import java.io.IOException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,13 +22,16 @@ import org.json.JSONObject;
 public class ImplAppServices implements IAppServices{
 
     @Autowired
-    HttpConnection con;
+    HttpConnection con; 
+    
+    @Autowired 
+    AppPersistence per;
     
     @Override
     public DatesIp getIpdates(String ipadress){
         
         try {
-             
+            
             String infoIp = con.getIpdates(ipadress);
             
             infoIp = infoIp.replace("null", "\"not found\"");
@@ -60,6 +66,20 @@ public class ImplAppServices implements IAppServices{
         }
         
         return null;
+    }
+
+    @Override
+    public List<Organization> getOrganization(String types) {
+        List<Organization> orgs = per.getOrganizations(types); 
+        ThreadServicesApp thapp = new ThreadServicesApp(orgs,this);
+        thapp.start();
+        try {
+            thapp.join();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(ImplAppServices.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return orgs;
+        
     }
     
     

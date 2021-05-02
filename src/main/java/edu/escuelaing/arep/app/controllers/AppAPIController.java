@@ -6,8 +6,6 @@
 package edu.escuelaing.arep.app.controllers;
 
 import edu.escuelaing.arep.app.services.IAppServices;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +21,15 @@ public class AppAPIController {
     IAppServices aservices;
     
     @RequestMapping(path ="/{ipadress}",method = RequestMethod.GET)
-    
     public ResponseEntity<?> isLoginUser(@PathVariable ("ipadress") String ipadress){ 
           return new ResponseEntity<>(aservices.getIpdates(ipadress),HttpStatus.ACCEPTED);
        
     } 
-        
+    
+    @RequestMapping(path ="/orgs/{type}",method = RequestMethod.GET)
+    public ResponseEntity<?> getOrgs(@PathVariable ("type") String types){ 
+          return new ResponseEntity<>(aservices.getOrganization(types),HttpStatus.ACCEPTED);
+       
+    } 
     
 }
