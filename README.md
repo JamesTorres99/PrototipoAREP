@@ -50,7 +50,7 @@ Luego de abrir la aplicación web en Heroku, se muestra la siguiente interfaz de
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MenuPrincipal.PNG)
 
-Al desplegar la aplicación en Heroku, se tiene la siguiente interfaz de usuario, en la cual este puede ingresar la dirección IP que se desea consultar y de la cual se desean saber los respectivos datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la IP ingresada.
+Luego de realizar clic en el botón de **Búsqueda por Dirección IP**, se tiene la siguiente interfaz de usuario, en la cual este puede ingresar la dirección IP que se desea consultar y de la cual se desean saber los respectivos datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la IP ingresada.
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Interfaz.PNG)
 
