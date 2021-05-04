@@ -46,6 +46,10 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 
 ----------
 
+Luego de abrir la aplicación web en Heroku, se muestra la siguiente interfaz de usuario, en la cual el usuario puede ya sea realizar la búsqueda manualmente por Dirección IP realizando clic en el botón correspondiente, o buscar por grupos de interés, entre los cuales se encuentran: **Gobierno**, **Industria**, **Educación Superior** y **Deportes**.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MenuPrincipal.PNG)
+
 Al desplegar la aplicación en Heroku, se tiene la siguiente interfaz de usuario, en la cual este puede ingresar la dirección IP que se desea consultar y de la cual se desean saber los respectivos datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la IP ingresada.
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Interfaz.PNG)
