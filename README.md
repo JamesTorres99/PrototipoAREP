@@ -18,8 +18,6 @@ En las **Estrategias de medición de la adopción de la nube en empresas colombi
 
 * https://arep-proyecto.herokuapp.com/
 
-**Se mostrará a continuación la interfaz de usuario del menú principal de la aplicación.**
-
 Al abrir la aplicación web desplegada en Heroku, se muestra la siguiente interfaz de usuario, en la cual el usuario puede ya sea realizar la búsqueda manualmente por Dirección IP realizando clic en el botón correspondiente, o buscar por grupos de interés, entre los cuales se encuentran: **Gobierno**, **Industria**, **Educación Superior** y **Deportes**.
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MenuPrincipal.PNG)
