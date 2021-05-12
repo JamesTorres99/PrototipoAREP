@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.json.JSONObject;
+import org.springframework.cache.annotation.Cacheable;
 
 @Service
 public class ImplAppServices implements IAppServices{
@@ -68,7 +69,8 @@ public class ImplAppServices implements IAppServices{
         return null;
     }
 
-    @Override
+    @Override 
+    @Cacheable("organization")
     public List<Organization> getOrganization(String types) {
         List<Organization> orgs = per.getOrganizations(types); 
         ThreadServicesApp thapp = new ThreadServicesApp(orgs,this);

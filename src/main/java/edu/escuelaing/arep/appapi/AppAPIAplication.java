@@ -6,13 +6,15 @@
 package edu.escuelaing.arep.appapi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 /**
  *
  * 
  */
-@SpringBootApplication 
-@ComponentScan(basePackages = {"edu.escuelaing.arep.app"})
+@SpringBootApplication  
+@ComponentScan(basePackages = {"edu.escuelaing.arep.app"}) 
+@EnableCaching
 public class AppAPIAplication {
     public static void main(String[] args) {
         SpringApplication.run(AppAPIAplication.class, args);
