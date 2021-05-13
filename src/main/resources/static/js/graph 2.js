@@ -5,7 +5,7 @@
             labels: ['AWS', 'Azure', 'Otros'],
             datasets: [{
                 label: 'Num datos',
-                data: [1, 0, 3],
+                data: [2, 1, 5],
                 backgroundColor: [
                     'rgb(142, 15, 226, 0.904)',
                     'rgb(218, 19, 19, 0.904)',
@@ -32,7 +32,7 @@
             labels: ['AWS', 'Azure', 'Otros'],
             datasets: [{
                 label: 'Num datos',
-                data: [1, 0, 3],
+                data: [2, 1, 5],
                 backgroundColor: [
                     'rgb(142, 15, 226, 0.904)',
                     'rgb(218, 19, 19, 0.904)',
@@ -55,10 +55,10 @@
     var myChart = new Chart(grafica3, {
         type: "polarArea",
         data: {
-            labels: ['United States', 'Canada', 'Otros'],
+            labels: ['United States', 'Colombia', 'Otros'],
             datasets: [{
                 label: 'Num datos',
-                data: [3, 1, 0],
+                data: [7, 1, 0],
                 backgroundColor: [
                     'rgb(142, 15, 226, 0.904)',
                     'rgb(218, 19, 19, 0.904)',
