@@ -22,6 +22,22 @@ Al abrir la aplicación web desplegada en Heroku, se muestra la siguiente interf
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/MenuPrincipal.PNG)
 
+Al realizar clic sobre el botón **Gobierno**, se muestra el respectivo análisis del grupo de interés con sus respectivas gráficas, en las cuales se encuentra distribuido primero en qué proveedor de nube se encuentran alojadas las páginas web del grupo de interés, y segundo, en qué países se encuentran alojadas dichas páginas web, acompañado de sus respectivos datos de cada página web, como lo son ciudad, región, país, nombre de la organización y proveedor.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Gobierno.PNG)
+
+Al realizar clic sobre el botón **Industria**, se muestra el respectivo análisis del grupo de interés con sus respectivas gráficas, en las cuales se encuentra distribuido primero en qué proveedor de nube se encuentran alojadas las páginas web del grupo de interés, y segundo, en qué países se encuentran alojadas dichas páginas web, acompañado de sus respectivos datos de cada página web, como lo son ciudad, región, país, nombre de la organización y proveedor.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Industria.PNG)
+
+Al realizar clic sobre el botón **Educación Superior**, se muestra el respectivo análisis del grupo de interés con sus respectivas gráficas, en las cuales se encuentra distribuido primero en qué proveedor de nube se encuentran alojadas las páginas web del grupo de interés, y segundo, en qué países se encuentran alojadas dichas páginas web, acompañado de sus respectivos datos de cada página web, como lo son ciudad, región, país, nombre de la organización y proveedor.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/EducacionSuperior.PNG)
+
+Al realizar clic sobre el botón **Deportes**, se muestra el respectivo análisis del grupo de interés con sus respectivas gráficas, en las cuales se encuentra distribuido primero en qué proveedor de nube se encuentran alojadas las páginas web del grupo de interés, y segundo, en qué países se encuentran alojadas dichas páginas web, acompañado de sus respectivos datos de cada página web, como lo son ciudad, región, país, nombre de la organización y proveedor.
+
+![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Deportes.PNG)
+
 Luego de realizar clic en el botón de **Búsqueda por Dirección IP**, se tiene la siguiente interfaz de usuario, en la cual este puede ingresar la dirección IP que se desea consultar y de la cual se desean saber los respectivos datos como lo son ciudad, región, país, nombre de la organización, proveedor y ubicación en el mapa de la IP ingresada.
 
 ![img](https://github.com/JamesTorres99/PrototipoAREP/blob/main/img/Interfaz.PNG)
